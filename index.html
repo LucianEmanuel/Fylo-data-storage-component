@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Frontend Mentor | Fylo data storage component</title>
+  </head>
+  <body>
+    <main>
+      <div class="card card_1 flex-flow radius">
+        <div class="logo">
+          <img src="images/logo.svg" alt="logo" />
+        </div>
+        <div class="icon_container flex-flow">
+          <div class="img-container">
+            <img src="images/icon-document.svg" alt="document" />
+          </div>
+          <div class="img-container">
+            <img src="images/icon-folder.svg" alt="upload" />
+          </div>
+          <div class="img-container">
+            <img src="images/icon-upload.svg" alt="upload" />
+          </div>
+        </div>
+      </div>
+      <div class="card card_2 flex-flow radius">
+        <p>You’ve used <span class="fw-700"> 815 GB</span> of your storage</p>
+        <div class="slider-container">
+          <input
+            type="range"
+            class="slider"
+            min="1"
+            max="1000"
+            id="myRange"
+            value="815"
+          />
+        </div>
+        <div class="range-value flex-flow fw-700">
+          <p>0GB</p>
+          <p>1000GB</p>
+        </div>
+        <div class="remains flex-flow radius fw-700">
+          <span class="large_txt">185</span>
+          <p>gb left</p>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
