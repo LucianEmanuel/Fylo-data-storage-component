@@ -107,16 +107,16 @@ svg {
   text-transform: uppercase;
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1000px) {
   main {
     background: url(images/bg-desktop.png) no-repeat, var(--Very-Dark-Blue);
     background-position: 0px 450px;
-    background-size: contain;
-    grid-template-columns: 350px 800px;
+    background-size: cover;
+    grid-template-columns: minmax(200px, 350px) minmax(500px, 800px);
     gap: 2rem;
   }
   .card {
-    min-width: 100%;
+    min-width: 95%;
   }
   .card_2 {
     max-width: 100%;
